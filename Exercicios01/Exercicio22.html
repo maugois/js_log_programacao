@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 22</title>
+</head>
+<body>
+    <h1>Exercício 22</h1>
+
+    <script>
+        let salario = parseFloat(prompt("Digite o salário do funcionário: R$"))
+
+        let bonus
+
+        if (salario > 2000) {
+            bonus = salario * 0.10
+        } else {
+            bonus = salario * 0.05
+        }
+
+        let salarioTotal = salario + bonus
+
+        document.write(`Salário: R$ ${salario.toFixed(2)} <br> Bônus: R$ ${bonus.toFixed(2)} <br> Total a receber: R$ ${salarioTotal.toFixed(2)}`)
+    </script>
+</body>
+</html>

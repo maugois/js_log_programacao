@@ -1,0 +1,15 @@
+* {
+    box-sizing: content-box;
+    font-family: sans-serif;
+}
+
+body {
+    color: #450404;
+    text-align: center;
+}
+
+#myImage {
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+}

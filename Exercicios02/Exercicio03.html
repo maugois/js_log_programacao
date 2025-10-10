@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+<body>
+    <h1>Exercício 03</h1>
+
+    <script>
+        let saldo = parseFloat(prompt("Informe o saldo médio do cliente:"))
+        let credito = 0
+
+        switch (true) {
+            case (saldo >= 0 && saldo <= 500):
+                credito = 0
+                break;
+
+            case (saldo >= 501 && saldo <= 1000):
+                credito = saldo * 0.3
+                break;
+
+            case (saldo >= 1001 && saldo <= 3000):
+                credito = saldo * 0.4
+                break;
+
+            case (saldo > 3000):
+                credito = saldo * 0.5
+                break;
+
+            default:
+                document.write("<h2>❌ Saldo inválido! Por favor, insira um valor válido.</h2>")
+                break;
+        }
+
+        document.write("<h2>Resultado do Cálculo</h2>")
+        document.write("<p><strong>Saldo médio:</strong> R$ " + saldo.toFixed(2) + "</p>")
+        document.write("<p><strong>Crédito concedido:</strong> R$ " + credito.toFixed(2) + "</p>")
+    </script>
+</body>
+</html>

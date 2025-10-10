@@ -1,0 +1,47 @@
+body {
+    text-align: center; 
+}
+
+img {
+    width: 150px;
+    height: 100px;
+    margin: 30px;
+}
+
+div {
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border: 5px double;
+    font-size: 16px;
+    text-align: justify;
+    top: 180px;
+    left: 450px;
+    visibility: hidden;
+}
+
+div img {
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+}
+
+#civic {
+    background-color: rgb(36, 36, 37);
+    color: rgb(255, 252, 213);
+    border-color: rgb(9, 9, 48);
+}
+
+#jetta {
+    background-color: rgb(24, 21, 21);
+    color: rgb(255, 252, 213);
+    border-color: rgb(236, 44, 44);
+}
+
+#urus {
+    background-color: rgb(15, 11, 73);
+    color: rgb(255, 252, 213);
+    border-color: rgb(43, 181, 223);
+}

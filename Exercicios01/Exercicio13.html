@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 13</title>
+</head>
+<body>
+    <h1>Exercício 13</h1>
+
+    <script>
+        let numUm = parseInt(prompt("Digite o primeiro número inteiro:"))
+        let numDois = parseInt(prompt("Digite o segundo número inteiro:"))
+
+        if (numDois === 0) {
+            document.write("Não é possível dividir por zero!")
+        } else if (numUm % numDois === 0) {
+            document.write(`${numUm} é múltiplo de ${numDois}.`)
+        } else {
+            document.write(`${numUm} não é múltiplo de ${numDois}.`)
+        }
+    </script>
+</body>
+</html>

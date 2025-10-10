@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 35</title>
+</head>
+<body>
+    <h1>Exercício 35</h1>
+
+    <script>
+        let nota1 = parseInt(prompt("Digite a primeira nota: "))
+        let nota2 = parseInt(prompt("Digite a segunda nota: "))
+        let nota3 = parseInt(prompt("Digite a terceira nota: "))
+
+        let media = (nota1 + nota2 + nota3) / 3
+
+        document.write("A média da nota é: " + media + "<br>")
+
+        if (media >= 7) {
+            document.write("Aprovado!")
+        } else {
+            document.write("Reprovado!")
+        }
+    </script>
+</body>
+</html>

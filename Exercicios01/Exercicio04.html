@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+<body>
+    <h1>Exercício 04</h1>
+
+    <script>
+        let nota1 = parseFloat(prompt("Digite a primeira nota: "))
+        let nota2 = parseFloat(prompt("Digite a segunda nota: "))
+        let nota3 = parseFloat(prompt("Digite a terceira nota: "))
+
+        let mediaPond = ((nota1 * 2) + (nota2 * 3) + (nota3 * 5)) / (2 + 3 + 5)
+
+        document.write("A média ponderada da nota é: " + mediaPond + "<br>")
+
+        if (mediaPond >= 6) {
+            document.write("Aprovado!")
+        } else {
+            document.write("Reprovado!")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 26</title>
+</head>
+<body>
+    <h1>Exercício 26</h1>
+
+    <script>
+        let produtos = {
+            1: 10.0,
+            2: 15.5,
+            3: 7.25,
+            4: 12.0
+        }
+
+        let codigo = parseInt(prompt("Digite o código do produto (1, 2, 3 ou 4):"))
+        let quantidade = parseInt(prompt("Digite a quantidade comprada:"))
+
+        if (produtos[codigo] !== undefined) {
+            let valorUnitario = produtos[codigo]
+            let valorTotal = valorUnitario * quantidade
+            document.write(`Produto ${codigo} - Quantidade: ${quantidade} <br> Valor unitário: R$ ${valorUnitario.toFixed(2)} <br> Valor total: R$ ${valorTotal.toFixed(2)}`)
+        } else {
+            document.write("Código de produto inválido!")
+        }
+    </script>
+</body>
+</html>

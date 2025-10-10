@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando o switch-case</title>
+</head>
+<body>
+    <h1>Testando o switch-case</h1>
+
+    <script>
+        let combo = parseInt(prompt(
+            "Escolha um combo:\n" +
+            "1 - Combo Burguer\n" +
+            "2 - Combo Pizza\n" +
+            "3 - Combo Sushi\n" +
+            "4 - Combo Vegano\n" +
+            "5 - Combo Infantil"
+        ));
+
+        let descricao = ""
+        let preco = 0
+
+        switch (combo) {
+            case 1:
+                descricao = "🍔 Combo Burguer: 1 Hambúrguer + Batata Frita + Refrigerante"
+                preco = 29.90
+                break;
+
+            case 2:
+                descricao = "🍕 Combo Pizza: 1 Pizza Média + Refrigerante 1L"
+                preco = 39.90
+                break;
+
+            case 3:
+                descricao = "🍣 Combo Sushi: 20 peças de Sushi + Molho Shoyu + Gengibre"
+                preco = 49.90
+                break;
+
+            case 4:
+                descricao = "🥗 Combo Vegano: Salada Completa + Suco Natural + Sobremesa Fit"
+                preco = 34.90
+                break;
+
+            case 5:
+                descricao = "🎈 Combo Infantil: Mini Hambúrguer + Suco + Brinquedo Surpresa"
+                preco = 24.90
+               
+
+            default:
+                document.write("<h2>❌ Opção inválida! Por favor, escolha de 1 a 5.</h2>")
+                 break;
+        }
+
+        document.write("<h2>Você escolheu o Combo " + combo + "!</h2>")
+        document.write("<strong>Descrição:</strong> " + descricao )
+        document.write("<strong>Preço:</strong> R$ " + preco.toFixed(2))
+    </script>
+</body>
+</html>

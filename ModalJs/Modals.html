@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <!-- Chamando CSS externo -->
+    <link rel="stylesheet" href="Modals.css" type="text/css">
+    <!-- Chamando js externo -->
+    <script src="Modals.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <h1>Testando modal na página</h1>
+
+    <!-- Criando botão que chama modal -->
+    <div class="botao" onclick="abrirModal()">
+        Click para abrir modal!
+    </div>
+
+    <!-- Tela escura transparente no fundo do modal -->
+    <div class="janela_escura">
+        <!-- Modal com conteúdo, no caso a propaganda -->
+        <div class="modal">
+            <div class="fechar" onclick="fecharModal()">X</div>
+            <img src="./propaganda.png" class="imagem" alt="imagem" title="imagem">
+        </div>
+    </div>
+</body>
+</html>
