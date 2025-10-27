@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 39</title>
+</head>
+<body>
+    <h1>Exercício 39</h1>
+    <script>
+        let soma = 0
+
+        for (let i = 1; i <= 5; i++) {
+            let nome = prompt("Nome da pessoa " + i + ":")
+            let idade = parseInt(prompt("Idade de " + nome + ":"))
+            soma += idade
+        }
+        
+        
+        document.write("Média das idades: " + (soma / 5))
+    </script>
+</body>
+</html>

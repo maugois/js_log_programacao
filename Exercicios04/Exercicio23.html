@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 23</title>
+</head>
+<body>
+    <h1>Exercício 23</h1>
+
+    <script>
+        let n = parseInt(prompt("Digite um número:"))
+        let a = 0, b = 1
+        document.write(a + "<br>")
+        document.write(b + "<br>")
+        let c = a + b
+        do{
+            document.write(c + "<br>")
+            a = b
+            b = c
+            c = a + b
+        }while(c <= n)
+    </script>
+</body>
+</html>

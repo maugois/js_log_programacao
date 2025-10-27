@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 37</title>
+</head>
+<body>
+    <h1>Exercício 37</h1>
+    <script>
+        let n = parseInt(prompt("Digite um número:"))
+        let cont = 0
+        
+        for (let i = 1; i <= n; i++) {
+            if (n % i == 0) cont++
+        }
+        
+        if (cont == 2) document.write("É primo")
+
+
+        else document.write("Não é primo")
+    </script>
+</body>
+</html>
