@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 23</title>
+</head>
+<body>
+    <h1>Exercício 23</h1>
+
+    <script>
+        let meses = ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"]
+        let dias = [31,28,31,30,31,30,31,31,30,31,30,31]
+        let mes = prompt("Digite o nome do mês:")
+        let indice = meses.indexOf(mes)
+
+        if (indice !== -1) {
+            document.write(`O mês de ${meses[indice]} possui ${dias[indice]} dias.`)
+        } else {
+            document.write("Mês inválido!")
+        }
+    </script>
+</body>
+</html>

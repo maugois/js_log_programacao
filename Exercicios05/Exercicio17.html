@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 17</title>
+</head>
+<body>
+    <h1>Exercício 17</h1>
+
+    <script>
+        let idade = parseInt(prompt("Digite sua idade:"))
+        let categorias = ["criança", "adolescente", "adulto", "idoso"]
+        let mensagem = ""
+
+        if (idade < 12) {
+            mensagem = categorias[0]
+        } else if (idade < 18) {
+            mensagem = categorias[1]
+        } else if (idade < 60) {
+            mensagem = categorias[2]
+        } else {
+            mensagem = categorias[3]
+        }
+
+        document.write(`Você é ${mensagem}.`)
+    </script>
+</body>
+</html>

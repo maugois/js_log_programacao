@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 41</title>
+</head>
+<body>
+    <h1>Exercício 41</h1>
+
+    <script>
+        let numero = parseInt(prompt("Digite um número inteiro positivo:"))
+        let divisor = 1
+
+        document.write("Divisores de " + numero + ":<br>")
+
+        while(divisor <= numero){
+            if(numero % divisor == 0){
+                document.write(divisor + "<br>")
+            }
+            divisor++
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+</head>
+<body>
+    <h1>Exercício 05</h1>
+
+    <script>
+        let produto = [
+            parseFloat(prompt("Preço do produto:")),
+            parseInt(prompt("Quantidade comprada:"))
+        ]
+
+        let total = produto[0] * produto[1]
+        if (produto[1] > 10) {
+            total *= 0.9
+        }
+
+        document.write(`Total a pagar: R$ ${total.toFixed(2)}`)
+    </script>
+</body>
+</html>

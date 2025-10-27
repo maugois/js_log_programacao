@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    <h1>Exercício 01</h1>
+
+    <script>
+        let numeros = []
+        numeros[0] = parseInt(prompt("Digite o primeiro número:"))
+        numeros[1] = parseInt(prompt("Digite o segundo número:"))
+
+        let operacoes = ["Soma", "Subtração", "Multiplicação", "Divisão"]
+        let resultados = [
+            numeros[0] + numeros[1],
+            numeros[0] - numeros[1],
+            numeros[0] * numeros[1],
+            numeros[0] / numeros[1]
+        ]
+
+        for (let i = 0; i < operacoes.length; i++) {
+            document.write(`${operacoes[i]}: ${resultados[i]}<br>`)
+        }
+    </script>
+</body>
+</html>

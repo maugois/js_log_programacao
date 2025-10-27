@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 42</title>
+</head>
+<body>
+    <h1>Exercício 42</h1>
+
+    <script>
+        let numero = parseInt(prompt("Digite um número inteiro:"))
+        let divisor = 2
+        let primo = true
+
+        if(numero < 2){
+            primo = false
+        } else {
+            while(divisor <= Math.sqrt(numero)){
+                if(numero % divisor === 0){
+                    primo = false
+                    break
+                }
+                divisor++
+            }
+        }
+
+        if(primo){
+            document.write(numero + " é primo.")
+        } else {
+            document.write(numero + " não é primo.")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 13</title>
+</head>
+<body>
+    <h1>Exercício 13</h1>
+
+    <script>
+        let numeros = [
+            parseInt(prompt("Digite o primeiro número:")),
+            parseInt(prompt("Digite o segundo número:"))
+        ]
+
+        if (numeros[0] % numeros[1] === 0) {
+            document.write(`${numeros[0]} é múltiplo de ${numeros[1]}`)
+        } else {
+            document.write(`${numeros[0]} não é múltiplo de ${numeros[1]}`)
+        }
+    </script>
+</body>
+</html>

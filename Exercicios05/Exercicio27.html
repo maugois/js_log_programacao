@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 27</title>
+</head>
+<body>
+    <h1>Exercício 27</h1>
+
+    <script>
+        let idade = parseInt(prompt("Digite sua idade:"))
+        let sexo = prompt("Digite seu sexo (M/F):")
+        let podeAposentar = false
+
+        if ((sexo === "M" && idade >= 65) || (sexo === "F" && idade >= 60)) {
+            podeAposentar = true
+        }
+
+        document.write(podeAposentar ? "Pode se aposentar." : "Ainda não pode se aposentar.")
+    </script>
+</body>
+</html>

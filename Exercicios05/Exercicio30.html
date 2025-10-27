@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 30</title>
+</head>
+<body>
+    <h1>Exercício 30</h1>
+
+    <script>
+        let qtd = parseInt(prompt("Digite o número de maçãs compradas:"))
+        let precos = [0.50, 0.40]
+        let valor = qtd < 12 ? precos[0] * qtd : precos[1] * qtd
+
+        document.write(`Valor total: R$ ${valor.toFixed(2)}`)
+    </script>
+</body>
+</html>

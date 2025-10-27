@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 16</title>
+</head>
+<body>
+    <h1>Exercício 16</h1>
+
+    <script>
+        let numero = parseFloat(prompt("Digite um número:"))
+        let mensagens = ["negativo", "zero", "positivo"]
+
+        if (numero < 0) {
+            document.write(`O número ${numero} é ${mensagens[0]}.`)
+        } else if (numero === 0) {
+            document.write(`O número é ${mensagens[1]}.`)
+        } else {
+            document.write(`O número ${numero} é ${mensagens[2]}.`)
+        }
+    </script>
+</body>
+</html>

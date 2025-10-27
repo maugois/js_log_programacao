@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 21</title>
+</head>
+<body>
+    <h1>Exercício 21</h1>
+
+    <script>
+        let qtdPessoas = parseInt(prompt("Quantas idades serão informadas?"))
+        let idades = []
+        let contagem = [0, 0] // [menores, maiores]
+
+        for (let i = 0; i < qtdPessoas; i++) {
+            idades[i] = parseInt(prompt(`Idade da pessoa ${i + 1}:`))
+            if (idades[i] < 18) {
+                contagem[0]++
+            } else {
+                contagem[1]++
+            }
+        }
+
+        document.write(`Menores de idade: ${contagem[0]}<br>Maiores de idade: ${contagem[1]}`)
+    </script>
+</body>
+</html>
